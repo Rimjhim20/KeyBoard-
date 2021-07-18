@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eaeff0;
+    display: flex;
+    place-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: rgb(126, 13, 126);
+    text-shadow: 5px 5px 10px purple;
+    word-spacing: 10px;
+}
+
+.keyboard_wrapper {
+    width: 1100px;
+    height: 750px;
+    padding: 20px;
+    border-radius: 10px;
+     background-color: #9c27b024;
+      
+}
+
+.keyboard_wrapper .display {
+    font-size: 35px;
+    height: 200px;
+    width: 1050px;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+     border: 2px inset #400146;  
+     white-space: pre-wrap;
+    box-shadow: inset 2px 2px 5px  rgb(110, 4, 87);
+        
+      
+}
+.keyboard_wrapper .key {
+    margin-top: 20px;
+    text-transform: lowercase;
+    user-select: none;
+    border: 2px solid purple;
+    border-radius: 30px;
+    background-image:url("https://i.pinimg.com/736x/26/cb/d2/26cbd28642a513f2a5129cb5977fed17.jpg") ;
+    
+}
+
+.keyboard_wrapper .key .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    gap: 20px;
+    
+}
+
+.keyboard_wrapper .key .row button {
+    width: 50px;
+    height: 50px;
+    place-content: center;
+    border-radius: 8px;
+    box-shadow:
+        3px 3px 6px #0002,
+        -3px -3px 6px #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: black;
+   color: #fff;
+   border: 3px solid rgb(225, 223, 231);
+   margin: 10px 0px 0px 3px;
+   padding: 10px;
+
+}
+.keyboard_wrapper .key .row button img{
+    width: 27px;
+}
+.keyboard_wrapper .key .row button.arrow1{
+margin-left: 47px;
+}
+.keyboard_wrapper .key .row div.arrow{
+   display: flex;
+   margin-left: 100px;
+}
+.keyboard_wrapper .key .row button.caps,
+.keyboard_wrapper .key .row button.backspace {
+    width: 95px;
+    display: flex;
+    align-items: center;
+}
+ .keyboard_wrapper .key .row button.space {
+    width: 30vw;
+} 
+.keyboard_wrapper .key .row button.active,
+.keyboard_wrapper .key .row button:hover {
+    border-color: red;
+    color: orange;
+}
+.keyboard_wrapper .key .row button.active,
+.keyboard_wrapper .key .row button:active{
+    box-shadow:
+        inset 3px 3px 6px #0002,
+        inset -3px -3px 6px #fff;
+}
+.keyboard_wrapper .key.uppercase {
+    text-transform: capitalize;
+}
